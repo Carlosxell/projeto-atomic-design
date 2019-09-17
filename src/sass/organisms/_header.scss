@@ -1,0 +1,22 @@
+@import '../core/_utils';
+
+.header {
+  background-color: lighten($dark-color, 5%);
+  box-shadow: 0 0 pxToRem(4) 0 $white-color;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  &_box {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: pxToRem(60);
+    padding: pxToRem(12);
+  }
+
+  &_title {
+    @extend %title;
+  }
+}
