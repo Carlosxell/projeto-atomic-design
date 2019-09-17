@@ -1,0 +1,9 @@
+@import '../variables/_variables';
+
+@function pxToRem($size) {
+  @return #{($size / $fontsize)}rem;
+}
+
+@function pxToEm($size) {
+  @return #{($size / $fontsize)}em;
+}

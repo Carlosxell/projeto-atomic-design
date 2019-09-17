@@ -1,0 +1,5 @@
+// mixin for CSS calc() function
+@mixin calc($property, $expression, $import) {
+  // PS: in $expression is necessary put the maths functions with spaces between them and set them like string
+  #{$property}: calc(#{$expression}) $import;
+}
