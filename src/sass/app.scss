@@ -2,5 +2,9 @@
 @import './core/base/_normalize';
 @import './core/base/_base';
 
+// Components
+@import './atoms/_forms';
+@import './atoms/_buttons';
+
 // SinglePage style
 @import './templates/_page';

@@ -1,0 +1,26 @@
+@import '../core/_utils';
+
+.input {
+  @extend %input;
+  @extend %inputAppearance;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  @include hoverAndActive(null);
+}
+
+.label {
+  font-size: pxToRem(18);
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: pxToRem(6);
+  width: 100%;
+
+  @media(min-width: pxToRem(768)) {
+    font-size: pxToRem(22);
+  }
+}
+
+.formGroup {
+  display: block;
+  margin-bottom: pxToRem(12);
+  width: 100%;
+}

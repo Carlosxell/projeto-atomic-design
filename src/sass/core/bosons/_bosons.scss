@@ -2,6 +2,43 @@
 @import '../functions/_functions';
 @import '../mixins/_mixins';
 
+%btn {
+  background-color: $color-gray;
+  border: pxToRem(2) solid $color-gray;
+  border-radius: pxToRem(4);
+  padding: pxToRem(12);
+}
+
+%input {
+  background-color: lighten($dark-color, 5%);
+  border: pxToRem(2) solid $white-color;
+  border-radius: pxToRem(4);
+  padding: pxToRem(12);
+  width: 100%;
+
+  &::placeholder{
+    color: darken($white-color, 5%);
+  }
+
+  &::-moz-placeholder{
+    color: darken($white-color, 5%);
+  }
+
+  &:-moz-placeholder{
+    color: darken($white-color, 5%);
+  }
+
+  &::-webkit-input-placeholder{
+    color: darken($white-color, 5%);
+  }
+}
+
+%inputAppearance {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 %title {
   font-size: pxToRem(16);
   font-weight: 500;

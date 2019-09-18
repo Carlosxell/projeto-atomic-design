@@ -1,0 +1,22 @@
+@import '../../sass/core/_utils';
+
+.formAdd {
+  margin-top: pxToRem(40);
+
+  &_grid {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+
+    &_item {
+      &:first-child {
+        @include calc(max-width, '100% - #{pxToRem(100)}', null);
+        @include calc(width, '100% - #{pxToRem(100)}', null);
+      }
+
+      &:last-child {
+        width: pxToRem(80);
+      }
+    }
+  }
+}

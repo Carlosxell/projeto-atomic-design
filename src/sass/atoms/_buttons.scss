@@ -1,0 +1,13 @@
+@import '../core/_utils';
+
+.btn {
+  @extend %btn;
+
+  &.btn--primary {
+    background-color: $blue-color;
+    border-color: $blue-color;
+    color: $white-color;
+  }
+
+  &--block { width: 100% }
+}

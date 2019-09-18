@@ -13,10 +13,14 @@
     display: flex;
     justify-content: space-between;
     min-height: pxToRem(60);
-    padding: pxToRem(12);
+    padding: pxToRem(12) pxToRem(8);
   }
 
   &_title {
     @extend %title;
+  }
+
+  @media(min-width: pxToRem(768)) {
+    padding: pxToRem(12);
   }
 }

@@ -5,7 +5,6 @@
   background-color: $dark-color;
   color: $white-color;
   display: flex;
-  @include calc(min-height, '100vh - #{pxToRem(0)}', null);
   justify-content: center;
   max-width: 100vw;
   padding-top: pxToRem(80);
@@ -15,6 +14,7 @@
   &_content {
     display: inline-block;
     max-width: pxToRem(768);
+    padding: 0 pxToRem(8);
     width: 100%;
   }
 }
