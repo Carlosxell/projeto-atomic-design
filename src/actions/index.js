@@ -1,7 +1,7 @@
 import { ADD_TODO, DELETE_TODO, UNCHECK_TODO, CHECK_TODO } from '../actions/types';
 
 export const handleAddTodo = (val) => (dispatch) => {
-  dispatch({ type: ADD_TODO, todo: val });
+  dispatch({ type: ADD_TODO, todoObj: val });
 };
 
 export const handleDeleteTodo = (val) => (dispatch) => {

@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import FormAdd from './components/FormAdd/FormAdd';
+import List from './components/List/List';
+import { connect } from 'react-redux';
 import './sass/app.scss';
 
 class App extends Component {
+  state = {};
+
   render() {
     return (
       <div className='app'>
@@ -11,10 +15,15 @@ class App extends Component {
 
         <div className='app_content'>
           <FormAdd />
+
+          <List />
         </div>
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = (store) => ({ todos: store.todos.list });
+const mapDispatchToProps = (dispatch) => ({});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
