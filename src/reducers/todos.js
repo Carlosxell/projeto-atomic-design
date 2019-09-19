@@ -7,16 +7,7 @@ const initialState = {
 export const todos = (state = initialState, action) => {
   switch(action.type) {
     case ADD_TODO:
-      state.list.push(action.todoObj);
-      return { ...state };
-
-    case DELETE_TODO:
-      return { ...state };
-
-    case CHECK_TODO:
-      return { ...state };
-
-    case UNCHECK_TODO:
+      state.list.push(action.todo);
       return { ...state };
 
     default:

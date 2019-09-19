@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { handleAddTodo } from '../../actions/index';
 import './formAdd.scss'
+import CardTodo from "../CardTodo/CardTodo";
 
 class FormAdd extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class FormAdd extends Component {
     ev.preventDefault();
 
     if(this.state.taskName.length) {
-      let id = this.props.todos.length ? this.props.todos[(this.props.todos.length -1)].id + 1 : 1;
+      let id = this.props.todos && this.props.todos.length ? this.props.todos[(this.props.todos.length -1)].id + 1 : 1;
       this.props.addTodo({ taskName: this.state.taskName, id, active: true });
     }
 
@@ -32,10 +33,10 @@ class FormAdd extends Component {
 
   render() {
     return(
-      <form autoComplete='off'
-            className='formAdd'
-            onSubmit={ this.handleSubmit }>
-        <div className='formAdd_grid'>
+      <div className='formAdd'>
+        <form className='formAdd_grid'
+              autoComplete='off'
+              onSubmit={ this.handleSubmit }>
           <div className='formAdd_grid_item'>
             <div className='formGroup'>
               <label className='label' htmlFor='taskName'>Task Name</label>
@@ -54,8 +55,10 @@ class FormAdd extends Component {
               <button className='btn btn--primary btn--block' type='submit' onClick={ (e) => this.handleSubmit(e) }>Add</button>
             </div>
           </div>
-        </div>
-      </form>
+        </form>
+
+        { this.props.todos.map(val => (<CardTodo key={ val.id } info={ val } />)) }
+      </div>
     );
   }
 }

@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './cardTodo.scss';
 
 class CardTodo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     let { info } = this.props;
     return(
@@ -12,4 +18,7 @@ class CardTodo extends Component {
   }
 }
 
-export default CardTodo;
+const mapStateToProps = store => ({ todos: store.todos.list });
+const mapDispatchToProps = (dispatch) => ({});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CardTodo);
