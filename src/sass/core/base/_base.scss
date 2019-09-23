@@ -18,6 +18,8 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 // Light reset
 html,
@@ -36,7 +38,7 @@ body {
   height: auto;
 
   &::-webkit-scrollbar {
-    background-color: rgba(#ccc, .5);
+    background-color: rgba($white-color, 1);
     border-radius: pxToRem(4);
     width: pxToRem(10);
   }
@@ -47,7 +49,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgba(#515f60, .3);
+    background-color: rgba($dark-color, .5);
     border-radius: pxToRem(4);
     width: pxToRem(10);
   }
@@ -82,7 +84,6 @@ h5,
 h6 {
   font-weight: 800;
   line-height: pxToRem(20);
-  margin: 0;
 }
 
 i,
@@ -99,6 +100,3 @@ a {
   &:visited {}
 }
 
-p {
-  margin-bottom: 0;
-}

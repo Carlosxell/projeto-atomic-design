@@ -21,6 +21,8 @@
   }
 
   @media(min-width: pxToRem(768)) {
-    padding: pxToRem(12);
+    &_box {
+      padding: pxToRem(12);
+    }
   }
 }
