@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dd57d5a-b314-4c19-a6aa-f9b22094bdb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CheckBox/CheckBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CheckBox/checkBox.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardTodo/CardTodo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardTodo/CardTodo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CardTodo/cardTodo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardTodo/cardTodo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/todos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/todos.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,22 +51,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/CardTodo/cardTodo.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+            <state relative-caret-position="534">
+              <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
               <folding>
-                <element signature="e#275#285#0" />
                 <element signature="e#287#321#0" />
                 <element signature="e#710#753#0" />
-                <element signature="e#808#818#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/CheckBox/CheckBox.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="377">
@@ -163,9 +155,9 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/reducers/todos.js" />
         <option value="$PROJECT_DIR$/src/components/CheckBox/checkBox.scss" />
-        <option value="$PROJECT_DIR$/src/components/CardTodo/cardTodo.scss" />
         <option value="$PROJECT_DIR$/src/components/CardTodo/CardTodo.js" />
         <option value="$PROJECT_DIR$/src/components/CheckBox/CheckBox.js" />
+        <option value="$PROJECT_DIR$/src/components/CardTodo/cardTodo.scss" />
       </list>
     </option>
   </component>
@@ -282,18 +274,18 @@
       <workItem from="1568810967571" duration="1970000" />
       <workItem from="1568816677948" duration="12643000" />
       <workItem from="1568892379564" duration="13466000" />
-      <workItem from="1569263499518" duration="15469000" />
+      <workItem from="1569263499518" duration="16717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54227000" />
+    <option name="totallyTimeSpent" value="55475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26431248" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26431248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -311,7 +303,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="GraphQL" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23804463" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23804463" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -627,15 +619,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CardTodo/cardTodo.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/CheckBox/CheckBox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        <state relative-caret-position="377">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
-            <element signature="e#275#285#0" />
-            <element signature="e#287#321#0" />
-            <element signature="e#710#753#0" />
-            <element signature="e#808#818#0" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -650,12 +639,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CheckBox/CheckBox.js">
+    <entry file="file://$PROJECT_DIR$/src/components/CardTodo/cardTodo.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state relative-caret-position="534">
+          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#287#321#0" />
+            <element signature="e#710#753#0" />
           </folding>
         </state>
       </provider>
