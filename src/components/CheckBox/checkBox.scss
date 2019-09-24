@@ -1,0 +1,45 @@
+@import '../../sass/core/_utils';
+
+.checkBox {
+  display: inline-block;
+  position: relative;
+
+  &_input {
+    height: pxToRem(0);
+    opacity: 0;
+    position: absolute;
+    width: pxToRem(0);
+
+    &:checked,
+    &.checked {
+      ~ .checkBox_text {
+        &:before {
+          border-color: transparent $blue-color $blue-color transparent;
+          transform: rotate(32deg);
+          top: pxToRem(-4);
+          width: pxToRem(14);
+        }
+      }
+    }
+  }
+
+  &_text {
+    cursor: pointer;
+    padding-left: pxToRem(24);
+    position: relative;
+
+    &:before {
+      border: pxToRem(2) solid $blue-color;
+      bottom: 0;
+      border-radius: pxToRem(4);
+      content: '';
+      display: inline-block;
+      height: pxToRem(20);
+      left: 0;
+      position: absolute;
+      transition: border-color .15s ease-in-out, transform .15s ease-in-out, width .15s ease-in-out;
+      top: 0;
+      width: pxToRem(20);
+    }
+  }
+}

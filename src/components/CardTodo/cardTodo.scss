@@ -30,6 +30,7 @@
       font-size: pxToRem(16);
       font-weight: 500;
       text-transform: capitalize;
+      transition: text-decoration .15s ease-in-out;
 
       @media(min-width: pxToRem(768)) {
         font-weight: pxToRem(20);
@@ -37,5 +38,20 @@
     }
   }
 
-  &_checkBox {}
+  &_grid {
+    align-items: center;
+    display: flex;
+
+    &_check {
+      padding-right: pxToRem(4);
+    }
+
+    &_content {}
+  }
+
+  &.finished {
+    .cardTodo_content_title {
+      text-decoration: line-through;
+    }
+  }
 }

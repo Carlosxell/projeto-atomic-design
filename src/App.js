@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Home from './views/Home';
-import { connect } from 'react-redux';
 import './sass/app.scss';
 
 class App extends Component {

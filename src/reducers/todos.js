@@ -18,6 +18,12 @@ export const todos = (state = initialState, action) => {
         list: state.list.filter(res => (res.id !== action.todo.id))
       };
 
+    case CHANGE_TODO_STATUS:
+      return {
+        ...state,
+        list: state.list.map(res => { return (res.id === action.todo.id) ? action.todo : res })
+      };
+
     default:
       return state;
   }
